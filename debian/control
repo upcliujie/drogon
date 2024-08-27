@@ -1,0 +1,28 @@
+Source: drogon
+Section: libs
+Priority: optional
+Maintainer: Jie Liu <liujie01@kylinos.cn>
+Uploaders: Jie Liu <liujie01@kylinos.cn>
+Build-Depends: cmake (>= 3.5~),
+               debhelper-compat (= 13),
+               git,
+               g++,
+               gcc,
+               libjsoncpp-dev,
+               uuid-dev,
+               zlib1g-dev,
+               openssl,
+               libssl-dev,
+               libsqlite3-dev,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://github.com/drogonframework/drogon
+Vcs-Browser: https://github.com/drogonframework/drogon
+Vcs-Git: https://github.com/drogonframework/drogon
+
+Package: drogon
+Architecture: any
+Depends: ${misc:Depends}
+Description: Drogon
+ Drogon is a C++17/20-based HTTP application framework. Drogon can be used to
+ easily build various types of web application server programs using C++.
